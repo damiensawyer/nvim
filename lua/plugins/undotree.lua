@@ -9,8 +9,3 @@ return {
     },
   },
 }
-
--- This is a comment.
--- This is another comment
--- This is really annoying that Codeium is puttin up those messages
--- This is with the new undo path
