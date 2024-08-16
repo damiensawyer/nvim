@@ -27,3 +27,11 @@ end
 
 -- Map 'mda' to delete all marks
 vim.api.nvim_set_keymap("n", "MD", ":lua DeleteAllMarks()<CR>", { noremap = true, silent = true })
+
+-- Allow :touch to have file completion
+vim.api.nvim_create_user_command("Touch", function(opts)
+  vim.cmd("silent! !touch " .. opts.args)
+end, { nargs = 1, complete = "file" })
+
+-- Create an alias `touch` that maps to `Touch`
+--vim.cmd("command! -nargs=1 -complete=file touch :Touch <args>")
