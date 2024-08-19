@@ -4,6 +4,7 @@
     "lazyvim.plugins.extras.editor.dial",
     "lazyvim.plugins.extras.editor.fzf",
     "lazyvim.plugins.extras.lang.git",
+    "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.ui.mini-animate"
   ],
   "news": {
