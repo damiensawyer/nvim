@@ -4,6 +4,7 @@ return {
   -- Specify the plugin and its configuration
   {
     "hrsh7th/nvim-cmp",
+    "neovim/nvim-lspconfig",
     config = function()
       -- Ensure nvim-cmp is required
       local cmp = require("cmp")
@@ -22,6 +23,7 @@ return {
         sources = cmp.config.sources({
           { name = "nvim_lsp" },
           { name = "luasnip" },
+          { name = "nvim_lspconfig" },
         }, {
           { name = "buffer" },
         }),
